@@ -1,0 +1,11 @@
+### GIT ###
+.git
+.gitignore
+
+### TEST ###
+src/test/
+
+### DOCKER COMPOSE ###
+docker-compose.dev.yml
+docker-compose.test.yml
+docker-compose.prod.yml

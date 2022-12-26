@@ -1,0 +1,10 @@
+[[User-API]]
+== User API
+
+[[사용자-로그인]]
+=== 사용자 로그인
+operation::api/users/sign-in[snippets='http-request,request-body,request-fields,http-response,response-body,response-fields']
+
+[[사용자-주소-입력]]
+=== 사용자 주소 입력
+operation::api/users/sign-in-address[snippets='http-request,request-body,request-fields,http-response,response-body,response-fields']
