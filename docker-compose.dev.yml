@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  database:
+    container_name: levain-database-dev
+    image: "mysql"
+    volumes:
+      - levain-database-dev-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_USERNAME: root
+      MYSQL_ROOT_PASSWORD: 11111111
+      MYSQL_DATABASE: levain
+    ports:
+      - "3306:3306"
+
+volumes:
+  levain-database-dev-data:

@@ -1,0 +1,18 @@
+[[Item-API]]
+== Item API
+
+[[추천-주멍-조회]]
+=== 추천 주멍 조회
+operation::item-controller-test/search[snippets='http-request,query-parameters,http-response,response-body,response-fields']
+
+[[나의-주멍-및-너의-주멍-등록]]
+=== 나의 주멍 및 너의 주멍 등록
+operation::item-controller-test/register[snippets='http-request,request-parts,request-part-itemInfo-fields,http-response,response-body,response-fields']
+
+[[나의-주멍-조회]]
+=== 나의 주멍 조회
+operation::item-controller-test/search-my-list[snippets='http-request,request-body,query-parameters,http-response,response-body,response-fields']
+
+[[나의-주멍-거래내역-수정]]
+=== 나의 주멍 거래내역 수정
+operation::item-controller-test/update-trade-status[snippets='http-request,request-body,request-fields,http-response,response-body,response-fields']
