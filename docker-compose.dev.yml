@@ -3,6 +3,7 @@ services:
   database:
     container_name: levain-database-dev
     image: "mysql"
+    restart: always
     volumes:
       - levain-database-dev-data:/var/lib/mysql
     environment:
