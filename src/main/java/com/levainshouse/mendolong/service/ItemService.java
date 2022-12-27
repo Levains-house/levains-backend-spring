@@ -29,7 +29,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.stream.Collectors;
@@ -105,8 +104,8 @@ public class ItemService {
                 .user(user)
                 .name(registerRequest.getName())
                 .description(registerRequest.getDescription())
-                .imgName(uploadFile.getStoreFilename())
-                .imgUrl(uploadFile.getStoreFileUrl())
+                .imgName(uploadFile.storeFilename())
+                .imgUrl(uploadFile.storeFileUrl())
                 .category(registerRequest.getCategory())
                 .purpose(registerRequest.getPurpose())
                 .tradeStatus(ItemTradeStatus.BEFORE)

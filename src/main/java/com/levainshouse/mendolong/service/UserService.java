@@ -29,6 +29,7 @@ public class UserService {
     }
 
     public User getUser(Long userId){
+        log.debug(String.format(TAG, "Get user"));
         return userRepository.findById(userId)
                 .orElseThrow(() -> new UserNotFoundException("존재하지 않는 사용자입니다."));
     }

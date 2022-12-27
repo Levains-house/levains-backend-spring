@@ -1,6 +1,5 @@
 package com.levainshouse.mendolong.repository;
 
-import com.levainshouse.mendolong.entity.Address;
 import com.levainshouse.mendolong.entity.Item;
 import com.levainshouse.mendolong.entity.User;
 import com.levainshouse.mendolong.enums.ItemCategory;
@@ -27,9 +26,9 @@ public class ItemCustomRepositoryImpl implements ItemCustomRepository {
     public List<Item> searchRecommendItems(ItemRecommendSearchCondition condition, Pageable pageable) {
         return jpaQueryFactory
                 .selectFrom(item)
-                .where(item.user.in(condition.getUsers()))
-                .where(item.purpose.eq(condition.getPurpose()))
-                .where(item.category.in(condition.getCategories()))
+                .where(item.user.in(condition.users()))
+                .where(item.purpose.eq(condition.purpose()))
+                .where(item.category.in(condition.categories()))
                 .where(item.tradeStatus.eq(ItemTradeStatus.BEFORE))
                 .offset(pageable.getOffset())
                 .limit(pageable.getPageSize())
@@ -40,8 +39,8 @@ public class ItemCustomRepositoryImpl implements ItemCustomRepository {
     public List<Item> searchRecommendExperienceItems(ItemRecommendExperienceSearchCondition condition, Pageable pageable) {
         return jpaQueryFactory
                 .selectFrom(item)
-                .where(item.user.in(condition.getUsers()))
-                .where(item.purpose.eq(condition.getPurpose()))
+                .where(item.user.in(condition.users()))
+                .where(item.purpose.eq(condition.purpose()))
                 .where(item.category.eq(ItemCategory.EXPERIENCE))
                 .where(item.tradeStatus.eq(ItemTradeStatus.BEFORE))
                 .offset(pageable.getOffset())

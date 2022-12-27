@@ -1,11 +1,8 @@
 package com.levainshouse.mendolong.utils;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.Data;
 
-@Data
-public class ErrorRequest {
+public record ErrorRequest(
+        @NotBlank(message = "값을 입력해주세요.") String test) {
 
-    @NotBlank(message = "값을 입력해주세요.")
-    private final String test;
 }

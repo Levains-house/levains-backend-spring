@@ -1,12 +1,7 @@
 package com.levainshouse.mendolong.exceptionhandler;
 
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+public record ExceptionResponse(
+        String code,
+        String message) {
 
-@Getter
-@RequiredArgsConstructor
-public class ExceptionResponse {
-
-    private final String code;
-    private final String message;
 }
