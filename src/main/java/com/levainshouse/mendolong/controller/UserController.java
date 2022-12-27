@@ -12,9 +12,9 @@ import com.levainshouse.mendolong.service.AddressService;
 import com.levainshouse.mendolong.service.TokenService;
 import com.levainshouse.mendolong.service.UserService;
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotEmpty;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,7 +30,9 @@ public class UserController {
     private final AddressService addressService;
     private final TokenService tokenService;
 
-    @PostMapping("/sign-in")
+    @PostMapping(value = "/sign-in",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> signIn(
             @Valid @RequestBody UserSignInRequest signInRequest){
         User findUser = userService.validateNewUser(signInRequest);
@@ -56,7 +58,9 @@ public class UserController {
         }
     }
 
-    @PostMapping("/sign-in/address")
+    @PostMapping(value = "/sign-in/address",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> signInAddress(
             @RequestHeader("authorization") String accessToken,
             @Valid @RequestBody List<AddressRegisterRequest> registerRequests){

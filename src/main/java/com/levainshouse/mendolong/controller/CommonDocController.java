@@ -5,6 +5,7 @@ import com.levainshouse.mendolong.dto.SuccessResponse;
 import com.levainshouse.mendolong.utils.ErrorRequest;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,7 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/error")
 public class CommonDocController {
 
-    @PostMapping
+    @PostMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> error(@Valid @RequestBody ErrorRequest errorRequest){
         return ResponseEntity.ok()
                 .body(new SuccessResponse(

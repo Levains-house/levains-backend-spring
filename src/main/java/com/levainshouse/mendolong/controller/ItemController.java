@@ -30,7 +30,7 @@ public class ItemController {
     private final UserService userService;
     private final ItemService itemService;
 
-    @GetMapping
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> search(
             @RequestHeader("authorization") String accessToken,
             @RequestParam("range") int range, Pageable pageable){
@@ -45,7 +45,7 @@ public class ItemController {
                 ));
     }
 
-    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> register(
             @RequestHeader("authorization") String accessToken,
             @RequestPart(value = "itemImage", required = false) MultipartFile image,
@@ -61,7 +61,7 @@ public class ItemController {
                 ));
     }
 
-    @GetMapping("/my-list")
+    @GetMapping(value = "/my-list", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> searchMyList(
             @RequestHeader("authorization") String accessToken, Pageable pageable){
         User user = userService.getUser(tokenService.verify(accessToken));
@@ -79,7 +79,9 @@ public class ItemController {
                 ));
     }
 
-    @PutMapping("/my-list/trade-status")
+    @PutMapping(value = "/my-list/trade-status",
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<SuccessResponse> updateTradeStatus(
             @RequestHeader("authorization") String accessToken,
             @RequestBody ItemUpdateTradeStatusRequest updateTradeStatusRequest){
