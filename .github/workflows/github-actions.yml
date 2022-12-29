@@ -35,7 +35,7 @@ jobs:
             ${{ runner.os }}-gradle-
       # Gradle 빌드
       - name: Build with Gradle
-        run: ./gradlew clean build -x test
+        run: ./gradlew clean build -x test -x copyDocument
         shell: bash
       # Spring 어플리케이션 Docker Image 빌드 및 DockerHub 푸쉬
       - name: Build Docker Image For Spring
