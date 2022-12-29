@@ -7,10 +7,6 @@ spring:
       max-file-size: 10MB
   jpa:
     open-in-view: false
-  mvc:
-    view:
-      prefix: /WEB-INF/views/
-      suffix: .jsp
 
 cloud:
   aws:
