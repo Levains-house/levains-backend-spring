@@ -1,0 +1,27 @@
+spring:
+  config:
+    activate:
+      on-profile: prod, dev, test
+  servlet:
+    multipart:
+      max-file-size: 10MB
+  jpa:
+    open-in-view: false
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    region:
+      static: ap-northeast-2
+      auto: false
+    stack:
+      auto: false
+    s3:
+      bucket: ${AWS_S3_BUCKET_NAME}
+
+server:
+  error:
+    whitelabel:
+      enabled: false

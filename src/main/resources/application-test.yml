@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/levain
+    username: root
+    password: 11111111
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    root: debug
+    org:
+      hibernate:
+        SQL: debug
+        type: trace

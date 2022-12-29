@@ -43,5 +43,4 @@ secrets.yml
 
 ### CUSTOM ###
 src/main/generated
-src/main/resources/*.yml
 
