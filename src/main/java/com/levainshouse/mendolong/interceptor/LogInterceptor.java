@@ -30,13 +30,13 @@ public class LogInterceptor implements HandlerInterceptor {
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
         String requestURI = request.getRequestURI();
         String logId = (String) request.getAttribute(LOG_ID);
-        log.info("RESPONSE [{}][{}][{}][{}]", logId, requestURI, response.getStatus(), handler);
+        log.info("RESPONSE [{}][{}][{}][{}]", logId, response.getStatus(), requestURI, handler);
     }
 
     @Override
     public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) throws Exception {
         if(ex != null){
-            log.error("EXCEPTION [{}]", ex.getMessage());
+            log.error("EXCEPTION [{}][{}]", response.getStatus(), ex.getMessage());
         }
     }
 }
