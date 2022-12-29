@@ -10,4 +10,4 @@ ENV PROFILES prod
 
 EXPOSE 80
 
-ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILES}", "-jar", "/mendolong.jar"]
+ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILES}", "-jar", "/app/mendolong.jar"]
