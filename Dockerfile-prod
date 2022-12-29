@@ -10,6 +10,6 @@ ENV PROFILES prod
 
 EXPOSE 80
 
-HEALTHCHECK --interval=5m --timeout=5s CMD curl -f http:localhost/api/health-check/ || exit 1
+HEALTHCHECK --interval=5m --timeout=5s CMD curl -f http://localhost/api/health-check/ || exit 1
 
 ENTRYPOINT ["java", "-Dspring.profiles.active=${PROFILES}", "-jar", "/app/mendolong.jar"]
