@@ -554,11 +554,11 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
-Content-Length: 62
+Content-Length: 72
 
 {
   "code" : "BAD_REQUEST",
-  "message" : "JSON parse error"
+  "message" : "값을 입력해주세요."
 }</code></pre>
 </div>
 </div>
@@ -686,7 +686,7 @@ Host: localhost:8080
 Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMCIsInJvbGUiOiJUUkFWRUwiLCJleHAiOjE2NzQ4MDkxNzAsImtha2FvX3RhbGtfY2hhdHRpbmdfdXJsIjoiaHR0cHM6Ly9vcGVuLmtha2FvLmNvbS90ZXN0IiwiaWF0IjoxNjcyMTMwNzcwLCJ1c2VybmFtZSI6Iuq0gOq0keqwnTEifQ.DLhvN3XyOBiXaj0Uogl1Pll_ih8Ky1SS_G5DzoOL8pMDPUq7QfJ6uc8f5zqme2blKRtUnGz4FLQt-WgAIjBXmA
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMCIsInJvbGUiOiJUUkFWRUwiLCJleHAiOjE2NzUwNTQ5NDcsImtha2FvX3RhbGtfY2hhdHRpbmdfdXJsIjoiaHR0cHM6Ly9vcGVuLmtha2FvLmNvbS90ZXN0IiwiaWF0IjoxNjcyMzc2NTQ3LCJ1c2VybmFtZSI6Iuq0gOq0keqwnTEifQ.k78H6WEUH1qLVxdVkchEnH2iH0CKEMVjq_nJv8xw1aIPDFa2paQnWEVxoK2yglChjoTupkr68nHZ0xrDD5FXOQ
 Content-Type: application/json
 Content-Length: 228
 
@@ -786,7 +786,7 @@ Content-Length: 228
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /api/users/sign-in/address HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJUUkFWRUwiLCJleHAiOjE2NzQ4MDkxNzAsImtha2FvX3RhbGtfY2hhdHRpbmdfdXJsIjoiaHR0cHM6Ly9vcGVuLmtha2FvLmNvbS90ZXN0IiwiaWF0IjoxNjcyMTMwNzcwLCJ1c2VybmFtZSI6Iuq4sOyhtCDqtIDqtJHqsJ0ifQ.8MmB_qsV9ERTRLs7kB6KLbO6-HH0nQ0FrOfvMcRy5fHFkweboZiHd4r5ukKvFfkD6XOgyeX7SJKsowS6KvEdaw
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMSIsInJvbGUiOiJUUkFWRUwiLCJleHAiOjE2NzUwNTQ5NDcsImtha2FvX3RhbGtfY2hhdHRpbmdfdXJsIjoiaHR0cHM6Ly9vcGVuLmtha2FvLmNvbS90ZXN0IiwiaWF0IjoxNjcyMzc2NTQ3LCJ1c2VybmFtZSI6Iuq4sOyhtCDqtIDqtJHqsJ0ifQ.6iGntYHe9_uxWVLLr58kTwbVHs004pEQMdlPFiDUk7KpKtaQtQt0py_scg31i2rJxLBw0I7Wk8Pt5lcHaDBnnQ
 Accept: application/json
 Content-Length: 108
 Host: localhost:8080
@@ -964,7 +964,7 @@ Content-Length: 248
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /api/items?range=5 HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NDgwOTE2OCwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIxMzA3NjgsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.b-wD3Gk8hHXqh5s5tmanx1eC7t5Q0-3I-M6EUf0ypgsau3YKRaeJg8DvWrp1J5atvqmyA4WDozIgvbUwvCNfCA
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NTA1NDk0NCwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIzNzY1NDQsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.3ic3HtQomZKCV3vblQkAK_Upo9xSBpwmHL4ZNjygLXYCcNy2ZuEngLn4Adsg0zF-kF8V_UB-FABDyB99BpdfWw
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -1013,7 +1013,7 @@ Vary: Origin
 Vary: Access-Control-Request-Method
 Vary: Access-Control-Request-Headers
 Content-Type: application/json
-Content-Length: 1763
+Content-Length: 1767
 
 {
   "code" : "OK",
@@ -1024,7 +1024,7 @@ Content-Length: 1763
         "item_id" : 7,
         "name" : "귤 농장 체험",
         "description" : "귤 농장 체험하세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/e8886844-fa3a-46bf-947e-1d98e9a07d8f.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/544f4c93-c74a-4f94-828c-f0be1cfc31d2.png",
         "purpose" : "SHARE",
         "category" : "EXPERIENCE"
       },
@@ -1032,7 +1032,7 @@ Content-Length: 1763
         "item_id" : 5,
         "name" : "장난감",
         "description" : "장난감 남는 것좀 나눔해주세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/8c27a7c3-9c36-4fb4-943a-3486534cecbf.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/605c78ae-f916-4e0b-b11b-38cc86b34d49.png",
         "purpose" : "WANT",
         "category" : "THINGS"
       }
@@ -1041,24 +1041,24 @@ Content-Length: 1763
         "item_id" : 8,
         "name" : "감귤",
         "description" : "귤 나눔 합니다.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/eb3ef202-cb9d-450c-a714-fffee6ccfac8.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/16a5d688-3817-4ded-b42b-af900e5fe950.png",
         "purpose" : "SHARE",
         "category" : "THINGS"
       },
       "want_item" : {
-        "item_id" : 6,
-        "name" : "아기 옷",
-        "description" : "아기 옷좀 나눔해주세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/37bd3d6e-5b67-4024-88d7-4df4b09a86b9.png",
+        "item_id" : 5,
+        "name" : "장난감",
+        "description" : "장난감 남는 것좀 나눔해주세요.",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/605c78ae-f916-4e0b-b11b-38cc86b34d49.png",
         "purpose" : "WANT",
-        "category" : "BABY_THINGS"
+        "category" : "THINGS"
       }
     } ],
     "experience_recommend_items" : [ {
       "item_id" : 7,
       "name" : "귤 농장 체험",
       "description" : "귤 농장 체험하세요.",
-      "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/e8886844-fa3a-46bf-947e-1d98e9a07d8f.png",
+      "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/544f4c93-c74a-4f94-828c-f0be1cfc31d2.png",
       "purpose" : "SHARE",
       "category" : "EXPERIENCE"
     } ]
@@ -1080,7 +1080,7 @@ Content-Length: 1763
         "item_id" : 7,
         "name" : "귤 농장 체험",
         "description" : "귤 농장 체험하세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/e8886844-fa3a-46bf-947e-1d98e9a07d8f.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/544f4c93-c74a-4f94-828c-f0be1cfc31d2.png",
         "purpose" : "SHARE",
         "category" : "EXPERIENCE"
       },
@@ -1088,7 +1088,7 @@ Content-Length: 1763
         "item_id" : 5,
         "name" : "장난감",
         "description" : "장난감 남는 것좀 나눔해주세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/8c27a7c3-9c36-4fb4-943a-3486534cecbf.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/605c78ae-f916-4e0b-b11b-38cc86b34d49.png",
         "purpose" : "WANT",
         "category" : "THINGS"
       }
@@ -1097,24 +1097,24 @@ Content-Length: 1763
         "item_id" : 8,
         "name" : "감귤",
         "description" : "귤 나눔 합니다.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/eb3ef202-cb9d-450c-a714-fffee6ccfac8.png",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/16a5d688-3817-4ded-b42b-af900e5fe950.png",
         "purpose" : "SHARE",
         "category" : "THINGS"
       },
       "want_item" : {
-        "item_id" : 6,
-        "name" : "아기 옷",
-        "description" : "아기 옷좀 나눔해주세요.",
-        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/37bd3d6e-5b67-4024-88d7-4df4b09a86b9.png",
+        "item_id" : 5,
+        "name" : "장난감",
+        "description" : "장난감 남는 것좀 나눔해주세요.",
+        "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/605c78ae-f916-4e0b-b11b-38cc86b34d49.png",
         "purpose" : "WANT",
-        "category" : "BABY_THINGS"
+        "category" : "THINGS"
       }
     } ],
     "experience_recommend_items" : [ {
       "item_id" : 7,
       "name" : "귤 농장 체험",
       "description" : "귤 농장 체험하세요.",
-      "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/e8886844-fa3a-46bf-947e-1d98e9a07d8f.png",
+      "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/544f4c93-c74a-4f94-828c-f0be1cfc31d2.png",
       "purpose" : "SHARE",
       "category" : "EXPERIENCE"
     } ]
@@ -1297,7 +1297,7 @@ Content-Length: 1763
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">POST /api/items HTTP/1.1
 Content-Type: multipart/form-data;charset=UTF-8; boundary=6o2knFse3p53ty9dmcQvWAIx1zInP11uCfbm
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NDgwOTE2OSwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIxMzA3NjksInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.FQLo0Zc-qIbf-eMVk4Z1L_PpldHVRbVmgQ3PAAdz7ANEVh5alsRWHDJoDmzQLtypfJ7nn-ghZV_A78SPXSj5CQ
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIzIiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NTA1NDk0NSwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIzNzY1NDUsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.lvFzeIbg2uoLhcnknSlIZAZRm4o-lIPcaSaaYlXAsUNZd_d4gAcPMuSXlJnAAuEOMrdaQBtypoS4xuepSqhoXg
 Accept: application/json
 Host: localhost:8080
 
@@ -1401,7 +1401,7 @@ Content-Length: 359
     "item_id" : 17,
     "name" : "테스트 물건",
     "description" : "테스트 물건 상세정보",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/13400820-0fce-4d76-8cb4-3af23c877c04.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/1035fcec-95f7-4d98-b589-6d33a61ec79b.png",
     "category" : "THINGS",
     "purpose" : "SHARE"
   }
@@ -1420,7 +1420,7 @@ Content-Length: 359
     "item_id" : 17,
     "name" : "테스트 물건",
     "description" : "테스트 물건 상세정보",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/13400820-0fce-4d76-8cb4-3af23c877c04.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/1035fcec-95f7-4d98-b589-6d33a61ec79b.png",
     "category" : "THINGS",
     "purpose" : "SHARE"
   }
@@ -1506,7 +1506,7 @@ Content-Length: 359
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">GET /api/items/my-list HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NDgwOTE2OSwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIxMzA3NjksInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.udDGvK5X2IIj_yzTg8lsXXkROX5kvAYUOK95utS4UuEoMe2dGpfkvn9Sp0kz6tIJShkXYpmggBUyHl_UOQWwZg
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI1Iiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NTA1NDk0Niwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIzNzY1NDYsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.mnjN32ff0iLuF5xqkyCmJWpgz8DUUfC54U3xhYnCVtgUWP7R3ngSEamyec3qzEN4n_bMDrG51FbNNzNmmD29Xw
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -1567,14 +1567,14 @@ Content-Length: 648
     "item_id" : 18,
     "name" : "장난감 나눔",
     "description" : "장난감 나눔합니다.",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/9065ad44-6654-492e-8c1c-5d6e04cfeade.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/4591a792-bb32-44eb-b913-8340bdf67b36.png",
     "category" : "THINGS",
     "trade_status" : "BEFORE"
   }, {
     "item_id" : 19,
     "name" : "아기 옷",
     "description" : "아기 옷 나눔합니다.",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/7cd2fa49-2bb1-4819-9cec-fff44bd0113d.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/0303229d-2919-49c3-92d1-18d326317de1.png",
     "category" : "BABY_THINGS",
     "trade_status" : "BEFORE"
   } ]
@@ -1593,14 +1593,14 @@ Content-Length: 648
     "item_id" : 18,
     "name" : "장난감 나눔",
     "description" : "장난감 나눔합니다.",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/9065ad44-6654-492e-8c1c-5d6e04cfeade.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/4591a792-bb32-44eb-b913-8340bdf67b36.png",
     "category" : "THINGS",
     "trade_status" : "BEFORE"
   }, {
     "item_id" : 19,
     "name" : "아기 옷",
     "description" : "아기 옷 나눔합니다.",
-    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/7cd2fa49-2bb1-4819-9cec-fff44bd0113d.png",
+    "img_url" : "https://levains.s3.ap-northeast-2.amazonaws.com/static/0303229d-2919-49c3-92d1-18d326317de1.png",
     "category" : "BABY_THINGS",
     "trade_status" : "BEFORE"
   } ]
@@ -1686,7 +1686,7 @@ Content-Length: 648
 <div class="content">
 <pre class="highlightjs highlight nowrap"><code class="language-http hljs" data-lang="http">PUT /api/items/my-list/trade-status HTTP/1.1
 Content-Type: application/json;charset=UTF-8
-authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3Iiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NDgwOTE3MCwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIxMzA3NzAsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.wFj5s8uG5IAdrAbgwxOneFGU-w9_30N-Jng2gc6oHHtXtivxM0pjem77S-9jvl8ErFlwlGFPUwGR6KgyYA3SLQ
+authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJzdWIiOiI3Iiwicm9sZSI6IlRSQVZFTCIsImV4cCI6MTY3NTA1NDk0Niwia2FrYW9fdGFsa19jaGF0dGluZ191cmwiOiJodHRwczovL29wZW4ua2FrYW8uY29tL3Rlc3QiLCJpYXQiOjE2NzIzNzY1NDYsInVzZXJuYW1lIjoi6riw7KG0IOq0gOq0keqwnSJ9.GLAAWvWc6ppIICBEf7us3W6tQL3pnJsoUnY_cQDQmPn_UkDwCaE35KgKqjSYS5WQszWLfH1sMhtC4jUP2QiBnQ
 Accept: application/json
 Content-Length: 48
 Host: localhost:8080

@@ -21,7 +21,16 @@ cloud:
     s3:
       bucket: ${AWS_S3_BUCKET_NAME}
 
-#server:
-#  error:
-#    whitelabel:
-#      enabled: false
+server:
+  error:
+    whitelabel:
+      enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
+  endpoint:
+    health:
+      show-details: always
